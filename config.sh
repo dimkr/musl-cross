@@ -20,7 +20,9 @@ CC_BASE_PREFIX=/opt/cross
 #GCC_BOOTSTRAP_CONFFLAGS="--with-arch=armv7-a --with-float=softfp"
 #GCC_CONFFLAGS="--with-arch=armv7-a --with-float=softfp"
 
-MAKEFLAGS=-j8
+MAKEFLAGS=-j$(grep processor /proc/cpuinfo | wc -l)
 
 # Enable this to build the bootstrap gcc (thrown away) without optimization, to reduce build time
 GCC_STAGE1_NOOPT=1
+
+GCC_BUILTIN_PREREQS=yes
