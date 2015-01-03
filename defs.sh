@@ -33,7 +33,7 @@ BINUTILS_URL=http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.bz2
 #last GPL2 release is 2.17, with backported  -Bsymbolic support
 #BINUTILS_URL=http://landley.net/aboriginal/mirror/ binutils-2.17.tar.bz2
 #BINUTILS_URL=ftp://sourceware.org/pub/binutils/snapshots/binutils-2.24.51.tar.bz2
-GCC_VERSION=4.8.3
+GCC_VERSION=4.8.4
 GDB_VERSION=7.4.1
 GMP_VERSION=4.3.2
 MPC_VERSION=0.8.1
@@ -43,7 +43,7 @@ LIBELF_VERSION=71bf774909fd654d8167a475333fa8f37fbbcb5d
 # LINUX_HEADERS_URL=http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.12.6.tar.xz
 # use patched sabotage-linux kernel-headers package (fixes userspace clashes of some kernel structs)
 # from upstream repo https://github.com/sabotage-linux/kernel-headers
-LINUX_HEADERS_URL=https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.63.tar.xz
+LINUX_HEADERS_URL=https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.65.tar.xz
 
 # musl can optionally be checked out from GIT, in which case MUSL_VERSION must
 # be set to a git tag and MUSL_GIT set to yes in config.sh
